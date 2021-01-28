@@ -33,5 +33,14 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 -Added various Archers and Guards to Bichon Province.
 -Adjusted Archers and Guards cords in Bichon Province.
 
+-Added Envir Folder *Includes*
+-Added Drops
+
+
+Known issues
+
+-Some movements are still broken.
+-Missing TestServerScroll script.
+
 
 
