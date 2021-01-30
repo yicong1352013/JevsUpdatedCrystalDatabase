@@ -42,14 +42,80 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 -Added Trainer + TrainingMob to all three Academy maps inside BW.
 -Academy Maps now No Fight zones.
 -Fixed many Movement issues around BichonProvince.
--Renamed WizardsHouse to ArchersHouse
--Added map ArchersHideout
+-Renamed WizardsHouse to ArchersHouse.
+-Added map ArchersHideout.
+-Fixed missing movements to OmaCave + Adjusted previous movements.
+
 
 
 Known issues
 
 -Some movements are still broken.
 -Missing \Envir\SystemScripts\00Default\TestServerScroll.txt
+-Add HellFire Spawns
+-Add IceHell Spawns
+-Add HellFire Coords
+-Add IceHell Coords
+-Add RedCavern Coords
+-Add Remaining Drops
+-Add Stats to following Monsters:
+
+SandStorm + Image
+FineSoul
+Bear
+TurtleGrass
+Leopard
+Minion_Warrior
+Minion_Warlock
+Minion_Priest
+Minion_Rouge
+Chieftain_Warrior
+Chieftain_Warlock
+Chieftain_Priest
+Chieftain_Rouge
+Chieftain_Archer
+Master_DragonYang
+Jar1
+Jar2
+FightingCat
+FireCat
+CatWidow
+StainHammerCat
+BlackHammerCat
+StrayCat
+CatShaman
+SeedingsGeneral
+RestlessJar
+GeneralJinmYo
+TucsonEgg
+YoungTucson
+Armadillo
+ArmadilloElder
+VisceralWorm2
+SandSnail
+CannibalTentacles
+Tucson
+TucsonFighter
+TucsonMage
+TucsonWarrior
+GeneralTucson
+FrozenSolider
+FrozenFighter
+FrozenArcher
+FrozenKnight
+FrozenGolem
+IcePhantom
+SnowWolf
+FrozenWarewolf
+FrozenMiner
+FrozenAxeman
+FrozenMagician
+SnowYeti
+IceCrystalSolider
+DarkWraith
+DarkSpirit
+SinseokMiner
+
 
 
 
