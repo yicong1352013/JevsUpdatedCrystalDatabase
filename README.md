@@ -37,10 +37,19 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 -Added Drops
 
 
+30/01/21
+
+-Added Trainer + TrainingMob to all three Academy maps inside BW.
+-Academy Maps now No Fight zones.
+-Fixed many Movement issues around BichonProvince.
+-Renamed WizardsHouse to ArchersHouse
+-Added map ArchersHideout
+
+
 Known issues
 
 -Some movements are still broken.
--Missing TestServerScroll script.
+-Missing \Envir\SystemScripts\00Default\TestServerScroll.txt
 
 
 
