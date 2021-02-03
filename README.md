@@ -52,15 +52,17 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 -Added \Envir\SystemScripts\00Default\TestServerScroll.txt.
 -Fixed all Bichon Province movements.
 -Changed minimap and bigmap from chinese minimaps/maps to plain minimap/maps without text.
+-Added Hellfire maps/spawns/movements/minimaps.
+
 
 Known issues
 
--Add HellFire Spawns
 -Add IceHell Spawns
--Add HellFire Coords
 -Add IceHell Coords
 -Add RedCavern Coords
 -Add Remaining Drops
+
+
 -Add Stats to following Monsters:
 
 SandStorm + Image
