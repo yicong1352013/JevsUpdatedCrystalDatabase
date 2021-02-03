@@ -27,7 +27,7 @@
 CHECKGOLD > 10000
 #ACT
 TAKEGOLD 10000
-MOVE 0 252 674
+MOVE n0 252 674
 BREAK
 #ELSESAY
 You Dont Have enough {Gold/Gold} to use my Service!

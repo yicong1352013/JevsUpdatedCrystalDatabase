@@ -50,11 +50,11 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 
 -Fixed all Transport NPC scripts to traveling to n0.
 -Added \Envir\SystemScripts\00Default\TestServerScroll.txt.
-
+-Fixed all Bichon Province movements.
+-Changed minimap and bigmap from chinese minimaps/maps to plain minimap/maps without text.
 
 Known issues
 
--Some movements are still broken.
 -Add HellFire Spawns
 -Add IceHell Spawns
 -Add HellFire Coords
