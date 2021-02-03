@@ -55,7 +55,6 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 Known issues
 
 -Some movements are still broken.
--Missing \Envir\SystemScripts\00Default\TestServerScroll.txt
 -Add HellFire Spawns
 -Add IceHell Spawns
 -Add HellFire Coords
