@@ -27,3 +27,8 @@ LocalMessage "You don't have Mysterious Stone!" Hint
 [@_CUSTOMCOMMAND(PKPOINT)]
 #ACT
 LocalMessage "You current have <$PKPOINT> PK Points." Hint
+
+;;Home Command.
+[@_CUSTOMCOMMAND(HOME)]
+#ACT
+MOVE n0 328 264

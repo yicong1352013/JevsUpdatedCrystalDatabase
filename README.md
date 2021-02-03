@@ -53,6 +53,7 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 -Fixed all Bichon Province movements.
 -Changed minimap and bigmap from chinese minimaps/maps to plain minimap/maps without text.
 -Added Hellfire maps/spawns/movements/minimaps.
+-Added @home command (BW SZ)
 
 
 Known issues
