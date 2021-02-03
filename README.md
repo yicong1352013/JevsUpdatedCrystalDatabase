@@ -48,8 +48,8 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 
 03/02/21
 
--Fixed all Transport NPC scripts to traveling to n0
-
+-Fixed all Transport NPC scripts to traveling to n0.
+-Added \Envir\SystemScripts\00Default\TestServerScroll.txt.
 
 
 Known issues

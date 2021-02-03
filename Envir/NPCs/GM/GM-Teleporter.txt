@@ -53,10 +53,10 @@ MOVE M001 395 196
 
 [@TeleBichonProvince]
 #ACT
-MOVE n0 329 270
+MOVE 0 329 270
 [@TeleBorderVillage]
 #ACT
-MOVE n0 288 616
+MOVE 0 288 616
 [@TeleWoomyonWoods]
 #ACT
 MOVE 1 315 82
@@ -100,7 +100,7 @@ MOVE morae 318 75
 
 [@OmaCave]
 #ACT
-MOVE n0 140 40
+MOVE 0 140 40
 [@InsectCave]
 #ACT
 MOVE 1 210 521
