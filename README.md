@@ -46,6 +46,10 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 -Added map ArchersHideout.
 -Fixed missing movements to OmaCave + Adjusted previous movements.
 
+03/02/21
+
+-Fixed all Transport NPC scripts to traveling to n0
+
 
 
 Known issues
