@@ -128,6 +128,12 @@ IceCrystalSolider
 DarkWraith
 DarkSpirit
 SinseokMiner
+HellBomb
+HellBomb1
+HellKnight
+HellKnight1
+HellDestroyer
+
 
 
 
