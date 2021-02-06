@@ -55,6 +55,12 @@ HellKnight2/HellKnight3/HellKnight4/HellBomb1/HellBomb2/HellBomb3
 -Added Hellfire maps/spawns/movements/minimaps.
 -Added @home command (BW SZ)
 
+06/02/21
+
+-Changed Hellfire maps/spawns/movements/minimaps/bigmaps.
+-Added Hellfire map files
+-Added Hellfire big/minimaps to mmap.lib
+-Uploaded new mmap.lib
 
 Known issues
 
@@ -62,6 +68,7 @@ Known issues
 -Add IceHell Coords
 -Add RedCavern Coords
 -Add Remaining Drops
+-Add HellFire Drops
 
 
 -Add Stats to following Monsters:
