@@ -6,7 +6,7 @@
 {GoTo My House Terriroy /lightblue}  <GO/@enterhouse>
 {Buy a House /lightblue}  <GO/@house>
                                       
-<ClOSE_PAGE/@EXIT>
+<EXIT/@EXIT>
 
 
 [@house]

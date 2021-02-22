@@ -15,7 +15,7 @@
 ;{/lightblue}  <GO/@>
 ;{/lightblue}  <GO/@>
                                       
-<ClOSE_PAGE/@EXIT>
+<EXIT/@EXIT>
 
 
 @teletemple
