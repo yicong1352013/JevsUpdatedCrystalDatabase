@@ -1,0 +1,105 @@
+[@main]
+#SAY
+{Hi there so you got your own house, In time you be able to /lightblue}
+{UpGrade your house with diffenert stuff witch you would
+{have to get from arould the mir world also from the free
+{tample you can go to that is just yours alone. /lightblue}
+
+{Sell My House /lightblue}  --  <GO/@sellhouse>
+
+{Teleport me to the Temple/lightblue}  <GO/@teletemple>
+
+{UpGrade the floors on my Temple}  --  <UpGrade/@upgrade>                                                       
+
+
+;{/lightblue}  <GO/@>
+;{/lightblue}  <GO/@>
+                                      
+<ClOSE_PAGE/@EXIT>
+
+
+@teletemple
+
+
+
+
+
+@sellhouse
+
+
+
+
+[@upgrade]
+#SAY
+{Hi there so you would like to upgarde : /lightblue}
+                                                                             
+{Temple /lightblue} <FloorUpGrade/@floorgrade>
+
+<Close/@EXIT>     <BACK/@EXIT>
+
+
+
+[@floorgrade]
+#SAY
+{please choose what floor to upgrade /lightblue}
+                                                
+{Floor2 /lightblue} <UpGrade/@floor2>
+{Floor3 /lightblue} <UpGrade/@floor3>
+;{Floor4 /lightblue} <UpGrade/@floor4>
+;{Floor5 /lightblue} <UpGrade/@floor5>
+;{Floor6 /lightblue} <UpGrade/@floor6>
+;{Floor7 /lightblue} <UpGrade/@floor7>
+;{Floor8 /lightblue} <UpGrade/@floor8>
+;{Floor9 /lightblue} <UpGrade/@floor9>
+;{Floor10 /lightblue} <UpGrade/@floor10>
+
+<Close/@EXIT>     <BACK/@EXIT>
+
+[@floor2]
+#SAY
+For this upgarde i need from you is a easy 2,000,000
+                                                    
+<I Got That/@pay2>             <No Way To Much/@Main>
+
+
+[@pay2]
+#IF
+CHECKGOLD 2000000
+#ACT
+TAKEGOLD 2000000
+ADDNAMELIST House\FloorUpGrade\floor2.txt
+LOCALMESSAGE "You upgraded  your Temple " Hint
+BREAK
+#ELSESAY
+"You dont have enough gold
+
+
+
+
+[@floor3]
+
+[@floor4]
+
+[@floor5]
+
+[@floor6]
+
+[@floor7]
+
+[@floor8]
+
+[@floor9]
+
+[@floor10]
+
+
+
+
+
+
+
+
+
+
+
+

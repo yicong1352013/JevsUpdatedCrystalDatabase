@@ -1,0 +1,1 @@
+New_Bichon_Province\HouseRental-n0,n0,330,256,HouseRental,178,100,0,False,0,0,None,None,0,False,0,0,0,1
