@@ -6,7 +6,7 @@
 {GoTo My House Terriroy /lightblue}  <GO/@enterhouse>
 {Buy a House /lightblue}  <GO/@house>
                                       
-<EXIT/@EXIT>
+<ClOSE_PAGE/@EXIT>
 
 
 [@house]
@@ -16,367 +16,39 @@
 {if it unsold ill let you buy it. If it is for sale ill /lightblue}
 {sell you it /lightblue}
 
+
 {Buy House1 /lightblue} <GO/@buy1>  --  {Buy House2 /lightblue} <GO/@buy2>
 {Buy House3 /lightblue} <GO/@buy3>  --  {Buy House4 /lightblue} <GO/@buy4>
 {Buy House5 /lightblue} <GO/@buy5>  --  {Buy House6 /lightblue} <GO/@buy6>
 {Buy House7 /lightblue} <GO/@buy7>  --  {Buy House8 /lightblue} <GO/@buy8>
 {Buy House9 /lightblue} <GO/@buy9>  --  {Buy House10 /lightblue} <GO/@buy10>
 
-<ClOSE_PAGE/@EXIT>
 
 [@buy1]
-#IF
-CHECK [851] 1
 #ACT
-GOTO @TAKEN
+
+LoadValue A1 "House.txt" House1 Global
+
+#IF
+
+CHECKCALC %A1 == 0
+
+CHECKGOLD 250000
+
+#ACT
+
+CALC A1 + 1
+
+SaveValue A1 "House.txt" House1 Global %A1
+
 #ELSEACT
-GOTO @HOUSE1
 
+LOCALMESSAGE "House already been bought" Hint
 
-[@HOUSE1]
-#IF
-CHECKGOLD 1500
-#ACT
-SET [851] 1
-TAKEGOLD 1500
-ADDNAMELIST House\HouseList\House1.txt
-LOCALMESSAGE "You paid for your house " Hint
-BREAK
-#ELSESAY
-"You dont have enough gold
+LOCALMESSAGE "Or you dont have the right amount of gold " Hint
 
 
 
-[@buy2]
-#IF
-CHECK [852] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE2
 
 
-[@HOUSE2]
-#IF
-CHECKGOLD 1500
-#ACT
-TAKEGOLD 1500
-SET [852] 1
-ADDNAMELIST House\HouseList\House2.txt
-MOVE house2 8 13
-break
-#ELSESAY
-"You dont have enough gold
 
-
-[@buy3]
-#IF
-CHECK [853] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE3
-
-
-[@HOUSE3]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [853] 1
-ADDNAMELIST House\HouseList\House3.txt
-MOVE house3 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-[@buy4]
-#IF
-CHECK [854] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE4
-
-
-[@HOUSE4]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [854] 1
-ADDNAMELIST House\HouseList\House4.txt
-MOVE house4 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-[@buy5]
-#IF
-CHECK [855] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE5
-
-
-[@HOUSE5]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [855] 1
-ADDNAMELIST House\HouseList\House5.txt
-MOVE house5 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-
-[@buy6]
-#IF
-CHECK [856] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE6
-
-
-[@HOUSE6]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [856] 1
-ADDNAMELIST House\HouseList\House6.txt
-MOVE house6 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-
-[@buy7]
-#IF
-CHECK [857] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE7
-
-
-[@HOUSE7]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [857] 1
-ADDNAMELIST House\HouseList\House7.txt
-MOVE house7 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-[@buy8]
-#IF
-CHECK [858] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE8
-
-
-[@HOUSE8]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [858] 1
-ADDNAMELIST House\HouseList\House8.txt
-MOVE house8 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-[@buy9]
-#IF
-CHECK [859] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE9
-
-
-[@HOUSE9]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [859] 1
-ADDNAMELIST House\HouseList\House9.txt
-MOVE house9 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-[@buy10]
-#IF
-CHECK [860] 1
-#ACT
-GOTO @TAKEN
-#ELSEACT
-GOTO @HOUSE10
-
-
-[@HOUSE10]
-#IF
-CHECKGold 100
-#ACT
-TAKE Gold 100
-SET [860] 1
-ADDNAMELIST House\HouseList\House10.txt
-MOVE house10 8 13
-break
-#ELSESAY
-"You dont have enough gold
-
-
-
-
-
-
-[@TAKEN]
-#SAY
-Sorry this has been paid for by some one else plsase choose
-a differnt house
-                                                           
-<back/@house>
-
-
-
-
-[@enterhouse]
-#IF
-CHECKNAMELIST House\HouseList\House1.txt
-#ACT
-GOTO @HMT1
-#ELSEACT
-GOTO @HMT2
-
-[@HMT1]
-#ACT
-MOVE House1 8 13
-
-[@HMT2]
-#IF
-CHECKNAMELIST House\HouseList\House2.txt
-#ACT
-GOTO @GTM22
-#ELSEACT
-GOTO @GTM3
-
-[@GTM22]
-#ACT
-MOVE House2 8 13
-
-[@GTM3]
-#IF
-CHECKNAMELIST House\HouseList\House3.txt
-#ACT
-GOTO @GTM33
-#ELSEACT
-GOTO @GTM4
-
-[@GTM33]
-#ACT
-MOVE House3 8 13
-
-[@GTM4]
-#IF
-CHECKNAMELIST House\HouseList\House4.txt
-#ACT
-GOTO @GTM44
-#ELSEACT
-GOTO @GTM5
-
-[@GTM44]
-#ACT
-MOVE House4 8 13
-
-[@GTM5]
-#IF
-CHECKNAMELIST House\HouseList\House5.txt
-#ACT
-GOTO @GTM55
-#ELSEACT
-GOTO @GTM6
-
-[@GTM55]
-#ACT
-MOVE House5 8 13
-
-
-[@GTM6]
-#IF
-CHECKNAMELIST House\HouseList\House6.txt
-#ACT
-GOTO @GTM66
-#ELSEACT
-GOTO @GTM7
-
-[@GTM66]
-#ACT
-MOVE House6 8 13
-
-[@GTM7]
-#IF
-CHECKNAMELIST House\HouseList\House7.txt
-#ACT
-GOTO @GTM77
-#ELSEACT
-GOTO @GTM8
-
-[@GTM77]
-#ACT
-MOVE House7 8 13
-
-[@GTM8]
-#IF
-CHECKNAMELIST House\HouseList\House8.txt
-#ACT
-GOTO @GTM88
-#ELSEACT
-GOTO @GTM9
-
-[@GTM88]
-#ACT
-MOVE House8 8 13
-
-[@GTM9]
-#IF
-CHECKNAMELIST House\HouseList\House9.txt
-#ACT
-GOTO @GTM99
-#ELSEACT
-GOTO @GTM10
-
-[@GTM99]
-#ACT
-MOVE House9 8 13
-
-[@GTM10]
-#IF
-CHECKNAMELIST House\HouseList\House10.txt
-#ACT
-GOTO @GTM1010
-#ELSEACT
-GOTO @GTMX
-
-[@GTM1010]
-#ACT
-MOVE House10 8 13
-
-[@GTMX]
-#SAY
-You DONT OWN A HOUSE
-
-<Close/@exit>

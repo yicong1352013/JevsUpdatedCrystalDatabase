@@ -1,0 +1,34 @@
+[House1]
+Global=1
+
+[House2]
+Global= 0
+
+[House3]
+Global= 0
+
+[House4]
+Global= 0
+
+[House5]
+Global= 0
+
+
+[House6]
+Global= 0
+
+
+[House7]
+Global= 0
+
+
+[House8]
+Global= 0
+
+
+[House9]
+Global= 0
+
+
+[House10]
+Global= 0
